@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <!--Circles for Mouse Over-->
+    <div class="circle"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <!-- Whole Body wrapper -->
+    <div class="wrapper">
+        <!-- Hero Container -->
+        <div class="hero__container">
+            <!-- Left Container of HeroConter for Description-->
+            <div class="left__cont">
+                <!-- Intro Box for Introducing yourself -->
+                <div class="intro__box">
+                    <!-- About You -->
+                    <div class="intro">
+                        <p>DEVELOPER.</p>
+                        <p>DESIGNER.</p>
+                        <p>THINKER.</p>
+                        <p>& CREATOR.</p>
+                    </div>
+                    <!-- What You do? -->
+                    <div class="sub__intro">
+                        <p>Desgining & Developing the Web Content</p>
+                        <p>Games, Graphic, 3D & Many More</p>
+                    </div>
+                    <!-- Provide Link to Explore More About You -->
+                    <div class="main__link">
+                        <button class="link_box"><a href="#">Explore More</a> </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Container -->
+            <div class="right__cont">
+                <!-- Menu Section -->
+                <div class="menu_section">
+                    <ul class="nav_list">
+                        <!-- List of Menu Items -->
+                        <li class="nav_item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav_item">
+                            <!-- DropDown Menu Opotions -->
+                            <div class="dropdown" href="#">
+                                <a href="#">Projects</a>
+                                <div class="dropdown-content">
+                                    <a href="#">C-programme</a>
+                                    <a href="#">Angular</a>
+                                    <a href="#">Boostrap</a>
+                                    <a href="#">SQL</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image section of right Container -->
+                <div class="img__section">
+                    <div class="img__container">
+                        <img src="../../20181230_123932.jpg" alt="profile">
+                        <div class="img__cap">
+                            <h1>Front-End-Developer</h1>
+                            <h2>Nitesh Tamang</h2>
+                            <p>Koteshwor-35, Kathmandu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project section for displaying Projecst -->
+        <div class="project_section">
+            <h3>Projects</h3>
+            <!-- Container that hold the Project -->
+            <div class="project__cont">
+                <!-- Projects div for placing Projects -->
+                <div class="project" style="background: #7f41bd;">
+                    <div class="pro__img">
+                        <p><i class="fa fa-address-card-o"></i></p>
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                    </div>
+                </div>
+                <div class="project" style="background: #535353;" target="_blank" onclick="window.location='./Memory Card game/index.html' ">
+                    <div class="pro__img">
+                        <!--<img src="./image/memory_card_game.jpg" alt="memory card game">-->
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                    </div>
+                </div>
+                <div class="project" style="background: #41bd4b;" onclick="window.location='./Js_book_list/index.html' ">
+                    <div class="pro__img">
+                        <p><i class="fa fa-edit"></i></p>
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Store App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                    </div>
+                </div>
+                <div class="project" style="background: #535353;">
+                    <div class="pro__img">
+                        <p><i class="fa fa-address-card-o"></i></p>
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                    </div>
+                </div>
+                <div class="project" style="background: #FF9800;">
+                    <div class="pro__img">
+                        <p><i class="fa fa-address-card-o"></i></p>
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
+                    </div>
+                </div>
+                <div class="project" style="background: #535353;">
+                    <div class="pro__img">
+                        <p><i class="fa fa-address-card"></i></p>
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill_section">
+            <!--Left Contaier-->
+            <div class="left_cont">
+                <div class="skill_cont">
+                    <p class="title">Skills
+                        <span class="skill_circle"></span>
+                        <span class="skill_circle"></span>
+                        <span class="skill_circle"></span>
+                        <span class="skill_circle"></span>
+                    </p>
+
+                    <p class="skill_name">Photoshop</p>
+                    <div class="skill_box">
+                        <div class="skill_bar" style="width: 95%; background: royalblue;">
+                            <p>95%</p>
+                        </div>
+                    </div>
+                    <p class="skill_name">Web Design</p>
+                    <div class="skill_box">
+                        <div class="skill_bar" style="width: 90%; background:#FF9800;">
+                            <p>90%</p>
+                        </div>
+                    </div>
+                    <p class="skill_name">SQL</p>
+                    <div class="skill_box">
+                        <div class="skill_bar" style="width: 85%; background: #41bd4b;">
+                            <p>85%</p>
+                        </div>
+                    </div>
+                    <p class="skill_name">Angular</p>
+                    <div class="skill_box">
+                        <div class="skill_bar" style="width: 70%; background:rgb(236, 58, 45);">
+                            <p>70%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Right Container-->
+            <div class="rt_cont">
+            </div>
+        </div>
+
+        <!--Sign Up-->
+        <div class="sign_up_section">
+            <!--left_cont-->
+            <div class="left_cont">
+                <div class="sign_up_cont">
+                    <div class="sign_up">
+                        <p class="title">Sign Up</p>
+                        <p class="desc">
+                            You can contact direclty or can hire me or can simply connect with me through this sign up Form.
+                        </p>
+                        <form id="form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name">
+                            <label for="email">Name:</label>
+                            <input type="email" id="email">
+                            <label for="sub">Name:</label>
+                            <input type="text" id="sub">
+                            <label name="msg">Message</label>
+                            <textarea rows="5"></textarea>
+                        </form>
+                        <a href="#">Send Message </a>
+                    </div>
+                </div>
+            </div>
+            <!--right_cont-->
+            <div class="rt_cont">
+
+            </div>
+        </div>
+
+        <!--Contact-->
+        <!-- <div class="contact_cont">
+            <p class="topic">Seems Interesting!</p>
+            <p class="desc">Hey! Want to get in touch with me. Then, You can simply send me message through contact page of which link is given below or also can follow me in my social media accounts.</p>
+            <p> <a href="#" class="contact_link">Get in Touch</a> </p>
+        </div>-->
+
+        <!--Footer-->
+        <div class="social_link">
+            <!--  <ul class="lt_link">
+                <li><a href="#">Git Hub</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Recent Activities</a></li>
+            </ul> -->
+            <p>You can also find me here:</p>
+            <ul class="link_item">
+                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <p class="copy_right">&copy; Copy Rights reserve 2019</p>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).mousemove(function(e) {
+            $('.circle').css({
+                left: e.pageX,
+                top: e.pageY,
+                opacity: 1
+            });
+            $('.circle1').css({
+                left: e.pageX,
+                top: e.pageY,
+                opacity: 1
+            });
+            $('.circle2').css({
+                left: e.pageX,
+                top: e.pageY,
+                opacity: 1
+            });
+        });
+        $(document).mouseleave(function() {
+            $('.circle').css({
+                opacity: 0
+            });
+            $('.circle1').css({
+                opacity: 0
+            });
+            $('.circle2').css({
+                opacity: 0
+            });
+        });
+    </script>
+
+</body>
+
+</html>
