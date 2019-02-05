@@ -397,7 +397,7 @@
      font-size: 30px;
      opacity: .6;
  }
- 
+ /*
  .skill_section .title::after {
      content: '';
      position: absolute;
@@ -406,7 +406,7 @@
      width: 70px;
      height: 10px;
      background: #313030;
- }
+ } */
   .skill_section .title .skill_circle {
      position: absolute;
      width: 10px;
