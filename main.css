@@ -94,8 +94,8 @@
  /* Main Link:hover  */
  
  .main__link a:hover {
-     background: white;
-     color: rebeccapurple;
+     background: rgb(61, 187, 78);
+     color: white;
      transition: all 500ms ease;
  }
  /* right Container Styling */
@@ -514,7 +514,7 @@
      float: left;
      width: 50%;
      height: 90%;
-     background: rgb(219, 219, 219);
+     background: rebeccapurple;
  }
 .sign_up_section .left_cont .bg_cont {
      width: 100%;
