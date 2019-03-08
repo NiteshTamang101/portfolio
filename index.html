@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="project-cont.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar-style.css" />
 
 </head>
 
@@ -19,9 +19,42 @@
         <div class="hero__container">
             <!-- Left Container of HeroConter for Description-->
             <div class="left__cont">
-                <div class="logo_section">
-                    <a href="#">Front-End-Design</a>
+                <div class="lt-header">
+                    <div class="logo_section">
+                        <a href="#">Front-End-Design</a>
+                    </div>
+                    <div class="menu-icon">
+                        <a class="hamburger-menu-icon" href="#"><i class="fa fa-bars"></i></a>
+                        <div class="menu-section">
+                            <a href="#">About</a>
+                            <a href="#">Projects</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- <nav class="navbar">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <a href="#" class="logo">logo</a>
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="#" class="nav-links">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-links">Products</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-links">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-links">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-links">Blog</a>
+                        </li>
+                    </ul>
+                </nav> -->
                 <!-- Intro Box for Introducing yourself -->
                 <div class="intro__box">
                     <!-- About You -->
@@ -39,10 +72,10 @@
                     <!-- Scoial media Links -->
                     <div class="social-media-link">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/NiteshTamang101" target="_blank"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div>
                     <!-- Provide Link to Explore More About You -->
@@ -66,6 +99,7 @@
                                 <a href="#myProject-section">Projects</a>
                                 <div class="dropdown-content">
                                     <a href="#">C-programme</a>
+                                    <a href="#">Canvas</a>
                                     <a href="#">Angular</a>
                                     <a href="#">Boostrap</a>
                                     <a href="#">SQL</a>
@@ -81,7 +115,7 @@
                 <div class="hero-image-section">
                     <div class="img__section">
                         <div class="img__container">
-                            <img src="./20181230_123932.jpg" alt="profile">
+                            <img src="../../20181230_123932.jpg" alt="profile">
                             <div class="img__cap">
                                 <h1>Front-End-Developer</h1>
                                 <h2>Nitesh Tamang</h2>
@@ -94,13 +128,20 @@
         </div>
         <!-- Project section for displaying Projecst -->
         <div class="project_section" id="myProject-section">
-            <h3>My Projects</h3>
+            <h3>Projects</h3>
             <p class="proj-desc">
-                You can view my Projects Code at Github.
-                <br> Links are available at the end of Every Project Page.
+                Projects Source Code links are available at the End of Every Project Page.
             </p>
+            <div class="tabs-btn-section">
+                <p class="tab-btn active-tab-btn" onclick="changeContent(event, 'all')" id="defaultOpen">All</p>
+                <p class="tab-btn" onclick="changeContent(event, 'c')">C-prog.</p>
+                <p class="tab-btn" onclick="changeContent(event, 'canvas')">Canvas</p>
+                <p class="tab-btn" onclick="changeContent(event, 'boostrap')">Boostrap</p>
+                <p class="tab-btn" onclick="changeContent(event, 'angular')">Angular</p>
+                <p class="tab-btn" onclick="changeContent(event, 'sql')">SQL</p>
+            </div>
             <!-- Container that hold the Project -->
-            <div class="project__cont">
+            <div class="project__cont" id="all">
                 <!-- Projects div for placing Projects -->
                 <div class="project">
                     <div class="pro__img">
@@ -151,7 +192,423 @@
                         <p class="proShort_desc">
                             Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
                         </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/campaignlanding.gif" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
                         <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card"></i></p> -->
+                        <img src="./image/to_do_app.jpg" alt="calender">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Container that hold the Project -->
+            <div class="project__cont" id="c">
+                <!-- Projects div for placing Projects -->
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/book_app1.jpg" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                        <a class="view-project" href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-audio-description"></i></p> -->
+                        <img src="./image/pricing.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                        <a href="./Memory Card Game/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-edit"></i></p> -->
+                        <img src="./image/book_app.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Data Recorder App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                        <a href="./Js_book_list/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/booking_flight.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/campaignlanding.gif" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card"></i></p> -->
+                        <img src="./image/to_do_app.jpg" alt="calender">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Container that hold the Project -->
+            <div class="project__cont" id="boostrap">
+                <!-- Projects div for placing Projects -->
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/book_app1.jpg" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                        <a class="view-project" href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-audio-description"></i></p> -->
+                        <img src="./image/pricing.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                        <a href="./Memory Card Game/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-edit"></i></p> -->
+                        <img src="./image/book_app.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Data Recorder App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                        <a href="./Js_book_list/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/booking_flight.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/campaignlanding.gif" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card"></i></p> -->
+                        <img src="./image/to_do_app.jpg" alt="calender">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Container that hold the Project -->
+            <div class="project__cont" id="canvas">
+                <!-- Projects div for placing Projects -->
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/book_app1.jpg" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                        <a class="view-project" href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-audio-description"></i></p> -->
+                        <img src="./image/pricing.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                        <a href="./Memory Card Game/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-edit"></i></p> -->
+                        <img src="./image/book_app.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Data Recorder App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                        <a href="./Js_book_list/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/booking_flight.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/campaignlanding.gif" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card"></i></p> -->
+                        <img src="./image/to_do_app.jpg" alt="calender">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Container that hold the Project -->
+            <div class="project__cont" id="angular">
+                <!-- Projects div for placing Projects -->
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/book_app1.jpg" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                        <a class="view-project" href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-audio-description"></i></p> -->
+                        <img src="./image/pricing.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                        <a href="./Memory Card Game/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-edit"></i></p> -->
+                        <img src="./image/book_app.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Data Recorder App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                        <a href="./Js_book_list/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/booking_flight.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/campaignlanding.gif" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Landing Page</p>
+                        <p class="proShort_desc">
+                            A landing page made with Boostrap and Angular with simple UI.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card"></i></p> -->
+                        <img src="./image/to_do_app.jpg" alt="calender">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Calender</p>
+                        <p class="proShort_desc">
+                            Calender is a simple web apps wich converts A.D. Dates to B.S.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Container that hold the Project -->
+            <div class="project__cont" id="sql">
+                <!-- Projects div for placing Projects -->
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/book_app1.jpg" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Contact Management System</p>
+                        <p class="proShort_desc">
+                            Contact management System is a program Written in C-language. It is a very basic and simple programme to store the contacts of people in the local disk of your computer.
+                        </p>
+                        <a class="view-project" href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-audio-description"></i></p> -->
+                        <img src="./image/pricing.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Memory Card Game</p>
+                        <p class="proShort_desc">
+                            Using Vanilla Javascript, a Simple Memory is made, It is fun and enjoyable. It Covers Quiet bit of basics to some new and Advanced ES6 Feature.
+                        </p>
+                        <a href="./Memory Card Game/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-edit"></i></p> -->
+                        <img src="./image/book_app.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Book Data Recorder App</p>
+                        <p class="proShort_desc">
+                            It is an App made using Vanilla Javascript, this app helps you to store books record with it's author and Unique ISBN Id.
+                        </p>
+                        <a href="./Js_book_list/index.html" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="pro__img">
+                        <!-- <p><i class="fa fa-address-card-o"></i></p> -->
+                        <img src="./image/booking_flight.png" alt="memory card game">
+                    </div>
+                    <div class="pro_cap">
+                        <p class="pro_title">Boostrap form Validation</p>
+                        <p class="proShort_desc">
+                            Simple Form Made with some vaidation in it with the help of boostrap and JQuery.
+                        </p>
+                        <a class="project_link" href="#">View Project</a>
+                        <a class="code_link" href="#">Source Code</a>
                     </div>
                 </div>
                 <div class="project">
@@ -185,66 +642,68 @@
 
 
         <div class="skill_section" id="abt-cont">
+            <!-- left Container of Skill Section -->
+            <div class="about-container">
+                <div class="left_cont">
+                    <div class="abt-section">
+                        <p class="abt-title">
+                            About Myself
+                        </p>
+                        <p class="abt-desc">
+                            HI, I'm Nitesh Tamang, Front-end-Developer based on Kathmandu. I'm passionte about Front-End & Backend Technologies. I love to keep things simple with clean User Interface. Besides, I like to Play around Codes and create Web Animation.
+                            <br>In a Nutshell, I'm just a regular who just love to have fun and Play around Web Codes. Just Joking.! I just wanted to Make my Intro bit Fancier, that's all nothing More.! See Ya !
+                        </p>
 
-            <div class="left_cont">
-                <div class="abt-section">
-                    <p class="abt-title">
-                        About Myself
-                    </p>
-                    <p class="abt-desc">
-                        HI, I'm Nitesh Tamang, Front-end-Developer based on Kathmandu. I love to work with Front-End Technologies as well as Backend. HI, I'm Nitesh Tamang, Front-end-Developer based on Kathmandu. I love to work with Front-End Technologies as well as Backend.
-                        <br>HI, I'm Nitesh Tamang, Front-end-Developer based on Kathmandu.
-                    </p>
-                    <div class="project-done-cont">
-                        <p class="abt-icon"><i class="fa fa-book"></i></p>
-                        <p class="abt-num">25</p>
-                        <p>Total Projects</p>
+                        <div class="bottom-desc">
+                            <div class="project-done-cont">
+                                <p class="abt-icon"><i class="fa fa-book"></i></p>
+                                <p class="abt-num">30</p>
+                                <p>Total Projects</p>
+                            </div>
+                            <div class="volunteer-cont">
+                                <p class="abt-icon"><i class="fa fa-users"></i></p>
+                                <p class="abt-num">120</p>
+                                <p>Total Volunteers</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="volunteer-cont">
-                        <p class="abt-icon"><i class="fa fa-users"></i></p>
-                        <p class="abt-num">110</p>
-                        <p>Total Volunteers</p>
-                    </div>
+
                 </div>
+                <!-- right Container of Skill Section -->
+                <div class="rt_cont">
+                    <div class="skill_cont">
+                        <p class="title">
+                            Key Strength
+                        </p>
 
-            </div>
-
-            <div class="rt_cont">
-                <div class="skill_cont">
-                    <p class="title">
-                        Key Strength
-                        <span class="skill_circle"></span>
-                        <span class="skill_circle"></span>
-                        <span class="skill_circle"></span>
-                        <span class="skill_circle"></span>
-                    </p>
-
-                    <div class="skill-bar-section">
-                        <div class="individual-skill">
-                            <p class="skill_name">Photoshop 85%</p>
-                            <div class="skill_box">
-                                <div class="skill_bar">
+                        <div class="skill-bar-section">
+                            <div class="individual-skill">
+                                <p class="skill_name">Responsive Web Design 85%</p>
+                                <div class="skill_box">
+                                    <div class="skill_bar">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="individual-skill">
-                            <p class="skill_name">Web Design 90%</p>
-                            <div class="skill_box">
-                                <div class="skill_bar">
+                            <div class="individual-skill">
+                                <p class="skill_name">Javascript 80%</p>
+                                <div class="skill_box">
+                                    <div class="skill_bar">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="individual-skill">
-                            <p class="skill_name">SQL 70%</p>
-                            <div class="skill_box">
-                                <div class="skill_bar">
+                            <div class="individual-skill">
+                                <p class="skill_name">SQL 70%</p>
+                                <div class="skill_box">
+                                    <div class="skill_bar">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="individual-skill">
-                            <p class="skill_name">Angular 75%</p>
-                            <div class="skill_box">
-                                <div class="skill_bar">
+                            <div class="individual-skill">
+                                <p class="skill_name">Framework : Angular 75%</p>
+                                <div class="skill_box">
+                                    <div class="skill_bar">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -253,71 +712,175 @@
             </div>
         </div>
 
-
-
-        <!--Sign Up-->
-        <div class="sign_up_section">
-            <!--left_cont-->
-            <div class="left_cont">
-                <div class="sign_up_cont">
-                    <div class="sign_up">
-                        <p class="title">Sign Up Form</p>
-                        <form id="form">
-                            <section>
-                                <label for="name">Full Name:</label>
-                                <input type="text" id="name" required>
-                            </section>
-                            <section>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" required>
-                            </section>
-                            <section>
-                                <label for="sub">Subject:</label>
-                                <input type="text" id="sub" required>
-                            </section>
-                            <section>
-                                <label name="msg">Message</label>
-                                <textarea rows="5" required></textarea>
-                            </section>
-                            <section class="msg">
-                                <button type="submit">Send Message </button>
-                            </section>
-                        </form>
+        <!-- Techology section -->
+        <div class="work-section">
+            <p class="title">
+                What I Do ?
+            </p>
+            <div class="work-container">
+                <div class="work-box">
+                    <div class="img-section">
+                        <p><i class="fa fa-laptop"></i></p>
                     </div>
+                    <p class="work-title">Responsive Web Design</p>
+                    <p class="work-desc">
+                        Responsive web design is one of the Most Important Feature of the web. Without it, Pages don't adjust in a different divces and makes a mess of Website. Thus , Responsive Web Desgin is Necessary.
+                    </p>
+                    <!-- <table>
+                        <tr>
+                            <th>
+                                <p style="font-size: 3rem"><i class="fa fa-laptop"></i> <i class="fa fa-mobile-phone"></i></p>
+                            </th>
+                            <th>
+                                <p style="font-size: 1.6rem; font-weight: 500; padding-bottom: 1.4em;">Responsive Web Design</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding-bottom: 2em;">Responsive web design is one of the Most Important Feature of the web. Without it, Pages don't adjust in a different divces and makes a mess of Website. Thus , Responsive Web Desgin is Necessary.</td>
+                        </tr>
+                    </table> -->
                 </div>
-            </div>
-            <!--right_cont-->
-            <div class="rt_cont">
-                <div class="desc">
-                    <!-- <p class="title">Get In Touch</p>-->
-                    <h1 style="font-size: 3.4rem; font-weight: 400;">
-                        Work In Collabration
-                    </h1>
-                    <p style=" margin-left: 90px;color: rgb(83, 91, 209); font-weight: 500; font-size: 1.2rem; width: 70%; text-align: center">
-                        Collabaration Makes work even more Efficient & Effective.
+                <div class="work-box">
+                    <div class="img-section">
+                        <p><i class="fa fa-edit"></i></p>
+                    </div>
+                    <p class="work-title">User Interface/User Experience</p>
+                    <p class="work-desc">
+                        UI/UX are Vital Portion of Web Page, that allows user to have great User Experience and Simple User Interface to guide with Page. It is Important for the user to always to find the things that they are Lookign for which is Provided By UI/UX.
                     </p>
                 </div>
-                <div class="bg_cont"></div>
+                <div class="work-box">
+                    <div class="img-section">
+                        <p><i class="fas fa-project-diagram"></i></p>
+                    </div>
+                    <p class="work-title">Fully Integrated Pages</p>
+                    <p class="work-desc">
+                        Page Integration makes a Web Page to handle in Nicer and Clean ways. It divides pages into section and Keeps our code Clean. It makes Task like Update, Changes to the Page, etc very Comfortable.
+                    </p>
+                </div>
             </div>
         </div>
+        <!-- Technology -->
+        <div class="tech-section">
+            <!-- head of Section -->
+            <p class="tech-header">Technology</p>
+            <p class="tech-sub-header">I can Work With</p>
+            <div class="tech-container">
+                <!-- tech-box -->
+                <div class="tech-box">
+                    <table cellspacing="10">
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <th colspan="2">Language Known:</th>
+                                </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-icon" style="color:rgb(58, 29, 185);"><span><i class="fab fa-cuttlefish"></i></span></td>
+                                <td>C-programme</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: royalblue;"><span><i class="fab fa-python"></i></span></td>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: coral;"><span><i class="fab fa-java"></i></span></td>
+                                <td>Java </td>
+                            </tr>
 
-        <!--Contact-->
 
-        <div class="social_link">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tech-box">
+                    <table cellspacing="10">
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <th colspan="2">Front End</th>
+                                </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-icon" style="color:coral;"><span><i class="fab fa-html5"></i></span></td>
+                                <td>HTML 5</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: royalblue;"><span><i class="fab fa-css3-alt"></i></span></td>
+                                <td>CSS 3</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: rgb(255, 230, 9);"><span><i class="fab fa-js-square"></i></span></td>
+                                <td>Javascript </td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: crimson;"><span><i class="fab fa-angular"></i></span></td>
+                                <td>Angular (Framework)</td>
+                            </tr>
 
-            <p>You can also find me here:</p>
-            <ul class="link_item">
-                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-            </ul>
-            <p class="copy_right">&copy; Copy Rights reserve 2019</p>
+                        </tbody>
+
+
+                    </table>
+                </div>
+                <div class="tech-box">
+                    <table cellspacing="10">
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <th colspan="2">Back End</th>
+                                </tr>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-icon" style="color:rgb(24, 129, 59);"><span><i class="fab fa-node-js"></i></span></td>
+                                <td>Node.Js</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: brown;"><span><i class="fas fa-stream"></i></span></td>
+                                <td>Express JS (FrameWork)</td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: rgb(102, 240, 97);"><span><i class="fas fa-server"></i></span></td>
+                                <td>MongoDB (NoSQL) </td>
+                            </tr>
+                            <tr>
+                                <td class="table-icon" style="color: rgb(134, 134, 230);"><span><i class="fas fa-database"></i></span></td>
+                                <td>SQL (Database Management)</td>
+                            </tr>
+
+                        </tbody>
+
+
+                    </table>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+
+    </div>
+
+
+
+    <!--Contact-->
+
+    <div class="copy-right">
+        <p><strong>&copy; Copy Rights reserve 2019</strong></p>
+    </div>
 
 
     </div>
 
+
+    <script src="./main.js"></script>
+    <script src="./navBar.js"></script>
 </body>
 
 </html>
